@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="jquery-keynav.js"></script>
+<meta charset=utf-8 />
+<title>jQuery j-k navigation</title>
+<!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+    article, aside, figure, footer, header, hgroup, 
+    menu, nav, section { display: block; }
+</style>
+</head>
+<body>
+    <style type="text/css">
+    p.c1 {
+        height: 200px;
+        border: 1px solid blue;
+    }
+    
+    p.c2 {
+        height: 180px;
+        background: red;
+    }
+    </style>
+    <p class="c1">Hello World 1</p>
+    <p class="c1">Hello World 2</p>
+    <p class="c1">Hello World 3</p>
+    <p class="c2">Hello World 4</p>
+    <p class="c2">Hello World 5</p>
+    <div style="height: 2000px; background: yellow;"></div>
+	<script>
+		$('p').keynav();
+	</script>
+</body>
+</html>
