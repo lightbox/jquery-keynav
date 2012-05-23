@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jquery-keynav by lightbox</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jquery-keynav</h1>
+        <p>jQuery keyboard navigation (j-k navigation)</p>
+        <p class="view"><a href="https://github.com/lightbox/jquery-keynav">View the Project on GitHub <small>lightbox/jquery-keynav</small></a></p>
+        <ul>
+          <li><a href="https://github.com/lightbox/jquery-keynav/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/lightbox/jquery-keynav/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/lightbox/jquery-keynav">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>jquery-keynav</h1>
+
+<p>This is a <a href="http://www.jquery.com">jQuery</a> plugin to enable keyboard navigation in feed-like content (j-k navigation).</p>
+
+<ul>
+<li>j goes down, k goes up</li>
+<li>user can press and hold the key to navigate further</li>
+<li>you can add new nodes to the keyboard navigation as you load them</li>
+<li>node size changes are handled gracefully</li>
+</ul><h2>Installation</h2>
+
+<h3>Prequisites</h3>
+
+<ul>
+<li>
+<a href="http://www.jquery.com/">jQuery</a> - 1.6.0 or better</li>
+</ul><h3>Required files</h3>
+
+<p>Copy <code>jquery.keynav.js</code> to your javascript folder.</p>
+
+<h2>Usage</h2>
+
+<h3>Standard call with default settings:</h3>
+
+<pre><code>$('.feeditems').keynav();
+</code></pre>
+
+<p>Where $('.feeditems') are all the items you want the user to navigate within.</p>
+
+<p>If you're implementing infinite scroll, it's safe to reinvocate every time after you've loaded new feed items:</p>
+
+<pre><code>$('.feeditems').keynav();
+</code></pre>
+
+<h3>Options</h3>
+
+<pre><code>$('.feeditems').keynav({
+    speed: 150, //scroll animation speed
+    scrolltreshold: 60, //don't animate scrolling if item is fewer than *scrolltreshold* pixels tall
+    keynext: 74, // key code for next item
+    keyprev: 75 // key code for previous item
+});
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/lightbox">lightbox</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
